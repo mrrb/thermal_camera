@@ -18,11 +18,12 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
 #include <stdlib.h>
+#include <mem.h>
 #include "fsm.h"
 
 fsm_t* fsm_new (fsm_trans_t* tt)
 {
-  fsm_t* this = (fsm_t*) malloc (sizeof (fsm_t));
+  fsm_t* this = (fsm_t*) os_malloc (sizeof (fsm_t));
   fsm_init (this, tt);
   return this;
 }
