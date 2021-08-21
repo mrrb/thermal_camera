@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}"
+            ],
+            "defines": [],
+            "compilerPath": "~/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "compileCommands": "${workspaceFolder}/fw/build_fw/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
