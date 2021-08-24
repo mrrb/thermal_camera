@@ -1,2 +1,4 @@
 build_fw
+build_docs
+build_tests
 build

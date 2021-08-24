@@ -25,6 +25,9 @@ monitor:
 monitor2:
 	miniterm.py /dev/ttyUSB0 115200
 
+quick_clean:
+	idf.py $(IDF_OPTIONS) clean
+
 clean:
 	idf.py $(IDF_OPTIONS) fullclean
 	rm -fdr ./build_docs
@@ -45,4 +48,4 @@ FW_SUBPATH = .
 include ./tests/tests.mk
 
 
-.PHONY: all clean build flash monitor reconfigure menuconfig monitor2 size
+.PHONY: all clean build flash monitor reconfigure menuconfig monitor2 size quick_clean
